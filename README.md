@@ -1,5 +1,5 @@
 ﻿# Emscripten
-This fork as emscripten support. To build emscripten use:
+This fork has emscripten support. To build emscripten use:
 
 ```
 cd brotli
