@@ -5,7 +5,7 @@ CPPFLAGS = -I./brotli/c/include/ -I./src -I./include
 AR ?= ar
 CC ?= gcc
 CXX ?= g++
-
+EM ?= emcc
 # It's helpful to be able to turn these off for fuzzing
 CANONICAL_PREFIXES ?= -no-canonical-prefixes
 NOISY_LOGGING ?= -DFONT_COMPRESSION_BIN
@@ -61,3 +61,4 @@ deps :
 clean :
 	rm -f $(OBJS) $(EXE_OBJS) $(EXECUTABLES)
 	$(MAKE) -C $(BROTLI) clean
+	rm -rf bin
