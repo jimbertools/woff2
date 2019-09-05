@@ -1,4 +1,19 @@
-﻿This is a README for the font compression reference code. There are several
+﻿# Emscripten
+This fork as emscripten support. To build emscripten use:
+
+```
+cd brotli
+python make_em.py
+cd..
+python make_em.py
+```
+
+Bin and example can be found in bin/js dir.
+
+
+# Original readme
+
+This is a README for the font compression reference code. There are several
 compression related modules in this repository.
 
 brotli/ contains reference code for the Brotli byte-level compression
